@@ -15,6 +15,10 @@ function divide(a, b){
   return a / b;
 }
 
+function mod(a, b){
+  return a % b;
+}
+
 function scale(a, min, max){
   var range = subtract(max, min);
   
