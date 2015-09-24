@@ -8,5 +8,32 @@
   </head>
   <body>
     <h1>JavaScript について知っていることリスト</h1>
+
+    <section>
+      <h2>Promiseとは</h2>
+      <p>
+        PromiseとはES6から導入された概念で、
+        JavaScriptの非同期処理をコールバック地獄にならないようにかけます。
+      </p>
+      <pre>
+        <code>
+          asyncFunction(success, error);
+          function success(result){
+            doSomething(result);
+          }
+        </code>
+      </pre>
+      と書いていたものを
+      <pre>
+        <code>
+          asyncFunctionWithPromise().then(function(result){
+            doSomething();
+          }).catch(error);
+        </code>
+      </pre>
+      のように記述できる.
+    </section>
+
+
   </body>
 </html>
